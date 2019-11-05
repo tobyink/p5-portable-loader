@@ -1,0 +1,15 @@
+# This file provides instructions for packaging.
+
+@prefix : <http://ontologi.es/doap-deps#>.
+
+`portable-loader`
+	:runtime-requirement    [ :on "perl 5.008008"^^:CpanId ];
+	:runtime-requirement    [ :on "MooX::Press 0.010"^^:CpanId ];
+	:runtime-requirement    [ :on "JSON::Eval"^^:CpanId ];
+	:runtime-requirement    [ :on "Module::Pluggable"^^:CpanId ];
+	:runtime-requirement    [ :on "FindBin"^^:CpanId ];
+	:runtime-requirement    [ :on "TOML::Parser 0.08"^^:CpanId ];
+	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
+	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
+	.
+
