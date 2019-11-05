@@ -9,6 +9,7 @@
 	:runtime-requirement    [ :on "Module::Pluggable"^^:CpanId ];
 	:runtime-requirement    [ :on "FindBin"^^:CpanId ];
 	:runtime-requirement    [ :on "TOML::Parser 0.08"^^:CpanId ];
+	:test-requirement       [ :on "Test::Fatal"^^:CpanId ];
 	:test-requirement       [ :on "Test::More 0.96"^^:CpanId ];
 	:develop-recommendation [ :on "Dist::Inkt 0.001"^^:CpanId ];
 	.
