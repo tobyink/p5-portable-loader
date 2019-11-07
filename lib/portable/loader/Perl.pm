@@ -8,16 +8,20 @@ our $AUTHORITY = 'cpan:TOBYINK';
 our $VERSION   = '0.001';
 
 use portable::lib;
+use portable::loader;
 
-sub load {
+sub init {
 	my $me = shift;
-	my ($collection) = @_;
-	my $filename = portable::lib->search_inc("$collection.portable.pl");
-	if ($filename) {
-		my $rv = do($filename) or die "Error loading $filename";
-		return ($filename => $rv);
-	}
+	my ($loader) = @_;
+	$loader->register_extension('portable.pl');
 	return;
+}
+
+sub parse {
+	my $me = shift;
+	my ($filename) = @_;
+	my $rv = do($filename) or die "Error loading $filename";
+	return ($filename => $rv);
 }
 
 1;

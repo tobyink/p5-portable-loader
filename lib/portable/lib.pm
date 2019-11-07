@@ -16,14 +16,4 @@ sub import {
 	push @portable::INC, map { (my $fn = $_) =~ s(/$)(); $fn } @_;
 }
 
-sub search_inc {
-	my $me = shift;
-	my ($filename) = @_;
-	for my $dir (@portable::INC) {
-		my $qualified = "$dir/$filename";
-		return $qualified if -f $qualified;
-	}
-	return undef;
-}
-
 1;
