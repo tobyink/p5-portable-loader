@@ -5,7 +5,7 @@ use warnings;
 package portable::loader::Perl;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use portable::lib;
 use portable::loader;

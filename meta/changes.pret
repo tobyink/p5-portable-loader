@@ -4,3 +4,9 @@
 	issued  2019-11-05;
 	label   "Plot".
 
+`portable-loader 0.002 cpan:TOBYINK`
+	issued  2019-11-07;
+	changeset [
+		item "Include some documentation."^^Documentation;
+		item "Saner way of loading stuff."^^Change;
+	].
