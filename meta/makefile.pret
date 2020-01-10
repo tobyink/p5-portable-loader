@@ -4,7 +4,7 @@
 
 `portable-loader`
 	:runtime-requirement    [ :on "perl 5.008008"^^:CpanId ];
-	:runtime-requirement    [ :on "MooX::Press 0.010"^^:CpanId ];
+	:runtime-requirement    [ :on "MooX::Press 0.019"^^:CpanId ];
 	:runtime-requirement    [ :on "JSON::Eval"^^:CpanId ];
 	:runtime-requirement    [ :on "Module::Pluggable"^^:CpanId ];
 	:runtime-requirement    [ :on "FindBin"^^:CpanId ];
