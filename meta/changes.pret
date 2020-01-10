@@ -10,3 +10,9 @@
 		item "Include some documentation."^^Documentation;
 		item "Saner way of loading stuff."^^Change;
 	].
+
+`portable-loader 0.003 cpan:TOBYINK`
+	issued  2020-01-10;
+	changeset [
+		item "Require MooX::Press 0.019."^^Packaging;
+	].
